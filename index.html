@@ -60,51 +60,100 @@ https://www.tooplate.com/view/2120-ben-resume
                 </ul>
 
                 <title>Boutons Langue</title>
-    <style>
-    /* Arrière-plan animé */
-    body {
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(-45deg, #000000, #fad0c4, #e6f9af, #ffffff);
-        animation: gradientAnimation 10s ease infinite;
-    }
-
-    @keyframes gradientAnimation {
-        0% {
-            background-position: 0% 50%;
+       <style>
+        /* Body style */
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: #f4f4f9;
+            overflow: hidden;
+            position: relative;
+            font-family: Arial, sans-serif;
         }
-        50% {
-            background-position: 100% 50%;
+
+        /* Floating shapes container */
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.8;
+            animation: float 10s linear infinite;
         }
-        100% {
-            background-position: 0% 50%;
+
+        /* Circle shapes */
+        .circle {
+            background-color: #007bff; /* Blue for ideas */
         }
-    }
 
-    /* Style des boutons */
-    .button-container {
-        display: flex;
-        justify-content: center;
-        margin-top: 50px;
-    }
+        .circle-small {
+            width: 50px;
+            height: 50px;
+        }
 
-    .lang-button {
-        padding: 10px 20px;
-        margin: 10px;
-        background-color: #007bff;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
+        .circle-large {
+            width: 100px;
+            height: 100px;
+        }
 
-    .lang-button:hover {
-        background-color: #0056b3;
-    }
-</style>
+        /* Rectangle shapes (graphs or charts) */
+        .rectangle {
+            background-color: #ff7f50; /* Coral for planning */
+            border-radius: 10px;
+        }
+
+        .rectangle-small {
+            width: 80px;
+            height: 40px;
+        }
+
+        .rectangle-large {
+            width: 120px;
+            height: 60px;
+        }
+
+        /* Animation keyframes for floating */
+        @keyframes float {
+            0% {
+                transform: translateY(0) translateX(0);
+            }
+            50% {
+                transform: translateY(-20px) translateX(10px);
+            }
+            100% {
+                transform: translateY(0) translateX(0);
+            }
+        }
+
+        /* Positioning shapes */
+        .shape:nth-child(1) {
+            top: 10%;
+            left: 15%;
+            animation-duration: 6s;
+        }
+
+        .shape:nth-child(2) {
+            top: 20%;
+            left: 60%;
+            animation-duration: 8s;
+        }
+
+        .shape:nth-child(3) {
+            top: 50%;
+            left: 30%;
+            animation-duration: 10s;
+        }
+
+        .shape:nth-child(4) {
+            top: 70%;
+            left: 80%;
+            animation-duration: 7s;
+        }
+
+        .shape:nth-child(5) {
+            top: 40%;
+            left: 10%;
+            animation-duration: 12s;
+        }
+    </style>
 
 </head>
 <body>
@@ -112,6 +161,13 @@ https://www.tooplate.com/view/2120-ben-resume
         <a href="https://martins-ui.github.io/cv_github_pascal/#" class="form-control" id="submit-button" role="button">   Fr </a>
         <a href="https://martins-ui.github.io/cv_github_pascal/#" class="form-control" id="submit-button" role="button">   Eng </a>   
     </div>
+         <!-- Shapes -->
+    <div class="shape circle circle-small"></div>
+    <div class="shape circle circle-large"></div>
+    <div class="shape rectangle rectangle-small"></div>
+    <div class="shape rectangle rectangle-large"></div>
+    <div class="shape circle circle-small"></div>
+</body>
 </body>
             </div>
 
