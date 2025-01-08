@@ -61,26 +61,53 @@ https://www.tooplate.com/view/2120-ben-resume
 
                 <title>Boutons Langue</title>
     <style>
-        .button-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 50px;
-        }
+    /* Arrière-plan animé */
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+        background-size: 400% 400%;
+        animation: gradientAnimation 10s ease infinite;
+    }
 
-        .lang-button {
-            padding: 10px 20px;
-            margin: 10px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+    @keyframes gradientAnimation {
+        0% {
+            background-position: 0% 50%;
         }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
 
-        .lang-button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    /* Style des boutons */
+    .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .lang-button {
+        padding: 10px 20px;
+        margin: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .lang-button:hover {
+        background-color: #0056b3;
+    }
+</style>
+
 </head>
 <body>
     <div class="button-container">
